@@ -69,6 +69,9 @@ setup_compose() {
     sudo docker-compose up -d
 }
 
+sudo docker-compose down
+sudo rm -rf /opt/redash
+
 install_docker
 create_directories
 create_config
